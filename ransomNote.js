@@ -1,5 +1,5 @@
-let mag = "ive got a lovely bunch of coconuts"
-let ransom = "ive got some coconuts"
+let mag = "ive got a lovely bunch of some lovely coconuts"
+let ransom = "ive got some lovely coconuts"
 
 
 function CheckMagazine(magazine, note){
@@ -22,7 +22,7 @@ function CheckMagazine(magazine, note){
     for (let [key,value] of noteMap.entries()){
         for( let [key2, value2] of magazineMap.entries())
         if (magazineMap.get(key2) === noteMap.get(key)){
-            magazineMap.delete(key, value);
+            magazineMap.delete(key2, value2);
             noteMap.delete(key, value);
         }
     }
@@ -36,7 +36,5 @@ function CheckMagazine(magazine, note){
         }
 
     }
-    
-
 
 CheckMagazine(mag, ransom)

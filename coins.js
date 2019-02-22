@@ -12,8 +12,6 @@ let coinCount = {
     penny:0
 }
 
-
-
 function fewestCoins(cost){
     for (let i =0;cost > 0;i ){
         let currentCoin = Object.values(coins[i])
