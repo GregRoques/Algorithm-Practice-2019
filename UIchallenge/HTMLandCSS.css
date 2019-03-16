@@ -1,0 +1,83 @@
+/* Box placement and design */
+.boxWrapper{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:100vh;
+}
+
+.boxContainer{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center
+}
+
+.boxContainer p{
+    font-size: 14px;
+    margin-top:20px;
+    text-align:center;
+    visibility: visible;
+}
+
+.box{
+    /* specs */
+    width:100px;
+    height:100px;
+    background-color: lightblue;
+
+}
+
+.box:hover{
+    width:200px;
+    height:200px;
+}
+
+/* Box number design */
+
+.circle{
+    /* position:absolute; */
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    background-color:white;
+    border: 1px solid green;
+    /* visibility: hidden; */
+}
+
+.circle p{
+    color:green;
+    text-align:center;
+    vertical-align: middle;
+    /* visibility: hidden; */
+}
+
+/*======================================================== Media Queries */
+
+@media screen and (min-width:250px) and (max-width:500px){
+    .box{
+        background-color:yellow;
+      }
+    
+      .box:hover{
+          width:100px;
+          height:100px;
+      }
+
+      .boxContainer p{
+          visibility: hidden;
+      }
+
+      .circle{
+          visibility:visible;
+      }
+
+      .circle p{
+          visibility: visible;
+      }
+}
+
