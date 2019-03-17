@@ -33,16 +33,24 @@
 // ====================================== Question 2
 
 
+let i = 1
+async function timer(ms){
+  
+  let promise = new Promise ((resolve,reject)=>{
+    setTimeout(()=> resolve(`Log${i} (${ms} ms) called`), ms)
+  })
 
-// const timer = ms => logName => 
+  let result = await promise
+  
+  console.log(result)
+}
 
-// setTimeout(console.log, ms, `${logName} called`);
+async function log(){
+    const log1 = await timer(2500);
+    i++;
+    const log2 = await timer(1500);
+    i++
+    const log3 = await timer(500);
+}
 
-const log1 = timer(2500);
-console.log(log1)
-const log2 = timer(1500);
-const log3 = timer(500);
-
-
-
-
+log();
