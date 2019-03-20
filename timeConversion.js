@@ -4,19 +4,23 @@ let AM = new RegExp("AM")
 let PM = new RegExp("PM")
 let newTime
 function GIJoeTime(civilianTime){
-    if ( AM.test("AM") ){
+    if ( AM.test(civilianTime)){
         newTime = civilianTime.replace('AM','')
         console.log(newTime)
-    }else{
+    }else if ( PM.test(civilianTime)){
         let PMstring  = (civilianTime.replace('PM','')).split(":")
-        if (PMstring[0] < 12){
-            PMstring[0]+= 12
+        let hour = parseInt(PMstring[0])
+        console.log(hour)
+        if (hour < 12){
+            hour+= 12
+            PMstring[0] = hour
         }else{
-            PMstring[0] === 0
+            hour === 0
+            PMstring[0] = 0
         }
         newTime = PMstring.join(':')
         console.log(newTime)
     }
 }
 
-GIJoeTime("11:30:02 AM")
+GIJoeTime("12:30:02 AM")
