@@ -102,7 +102,10 @@ reverseString('doggy')
 
    // Accessing (or, refercing by elemebt) is O(1)
    // Insertion, deletion...Big O run time depends on order
-      // For example, .push() is constant time
+      // For example, .push() and .pop() are constant time
+         
       // On the contrary, inserting at the beginning slows things as all of the other
             // elements are re-indexed
+
+      // ...so it is best to add and remove from the beginning!
 
