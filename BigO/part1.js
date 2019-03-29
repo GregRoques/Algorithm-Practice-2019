@@ -73,3 +73,36 @@ reverseString('doggy')
          // before you get a value that's less than or equal to one.
 
          // so... log(8) = 3; or, 8 /2 = 4/2 = 2/2 =1 ...divisible by 2 three times
+
+// ___________________________________________________________________
+
+// Big O with Objects
+   // When you don't need order
+
+   // Insertion - O(1)
+   // Removal - O(1)
+   // Searching - O(n)
+   // Access - O(1)
+
+   // when searching, .hasOwnProperty is constant time (O(1))
+   // ex:
+
+   let cats = {
+      youngest: 'Nacheaux',
+      middleChild: 'Midnight',
+      aarpCardHolder: 'Callie'
+   }
+
+   console.log(cats.hasOwnProperty('youngest'))
+
+// ___________________________________________________________________
+
+// Big O with Arrays
+   // when you need an ordered list
+
+   // Accessing (or, refercing by elemebt) is O(1)
+   // Insertion, deletion...Big O run time depends on order
+      // For example, .push() is constant time
+      // On the contrary, inserting at the beginning slows things as all of the other
+            // elements are re-indexed
+
