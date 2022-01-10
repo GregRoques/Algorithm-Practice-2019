@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count from 42</title>
+    <style>
+        .counter-button {
+          font-size: 1rem;
+          padding: 5px 10px;
+          color: #585858;
+        }
+        </style>
+</head>
+<body>
+    <div>
+        <h2>Counter</h2>
+        <h2 class="counter">42</h2>
+        <button class="counter-button">Click</button>
+      </div>
+
+      <script>
+        document.getElementsByClassName("counter-button")[0].addEventListener("click", increment)
+          function increment(){
+              const getCount = document.getElementsByClassName("counter")[0].innerHTML;
+              let count = Number(getCount)
+              count++
+              document.getElementsByClassName("counter")[0].innerHTML = count;
+          }
+      </script>
+</body>
+</html>

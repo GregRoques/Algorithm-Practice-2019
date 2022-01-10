@@ -1,0 +1,96 @@
+body{
+    margin: 2rem;
+    font-family: sans-serif;
+}
+
+.header{
+    width:100%;
+    height: 400px;
+    margin-bottom: 8.5rem;
+}
+
+.header_top_margin{
+    width:100%;
+    top:0;
+    height: 40px;
+    background-color: #4E4C52;
+}
+
+.header_top_margin p{
+    color:white;
+    font-size: 16px;
+    padding: 12px 0px 12px 0px;
+    text-indent: 25%;
+}
+
+.header_background-image{
+    width: inherit;
+    height: 360px;
+    background-image: url('media/img_hero.jpg');
+    background-size: cover;
+}
+
+.header_background-image h1{
+    font-size: 80px;
+    color: #4E4C52;
+    display:inline-block;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    width: inherit;
+    top: 150px;
+    transform: translatex(-50%);
+}
+
+.team{
+    width: 100%;
+    height:150px;
+    display: flex;
+    justify-content: center;
+    position:absolute;
+    top:350px;
+    margin: 0px -2rem;
+}
+
+.team img{
+    object-fit: cover;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin: 0px 4rem 0px 4rem;
+}
+
+.how_it_works{
+    text-align: center;
+    font-size: 16px;
+    color: #4E4C52;
+}
+
+.how_it_works h2{
+    /* text-transform: uppercase; */
+    color: #e9bb2f;
+    font-size: 32px;
+}
+
+footer{
+    width: 100%;
+    height: 250px;
+    background-color: #4E4C52;
+    border-top: 10px solid #e9bb2f;
+    padding-top:1rem;
+    margin-top: 6rem;
+    color: white;
+    display: grid;
+    grid-template-columns: 125px 125px 125px 125px;
+    grid-gap:50px;
+    justify-content: center;
+}
+
+footer h3{
+    color: #e9bb2f;
+}
+
+footer h4{
+    font-weight: 400;
+    line-height: .5;
+}
